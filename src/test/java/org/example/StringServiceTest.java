@@ -3,9 +3,9 @@ package org.example;
 import org.example.services.StringService;
 import org.example.util.StringUtils;
 import org.mockito.InjectMocks;
+import org.mockito.Mock;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import org.mockito.Mock;
 
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
