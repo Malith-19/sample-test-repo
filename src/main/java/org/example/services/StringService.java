@@ -3,6 +3,7 @@ package org.example.services;
 import org.example.util.StringUtils;
 
 public class StringService {
+
     private StringUtils stringUtils;
 
     public StringService() {
@@ -11,6 +12,7 @@ public class StringService {
     }
 
     public boolean isPalindrome(String word) {
+
         if (word == null || word.length() <= 1) {
             return false;
         }
@@ -22,6 +24,14 @@ public class StringService {
             }
         }
         return true;
+    }
+
+    public String createPalindrome(String word) {
+
+        if (word == null || word.isEmpty()) {
+            return null;
+        }
+        return word + StringUtils.reverse(word);
     }
 
 }
