@@ -3,7 +3,7 @@ package org.example;
 import org.example.services.StringService;
 import org.example.util.StringUtils;
 import org.mockito.InjectMocks;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.mockito.Mock;
 
@@ -20,7 +20,7 @@ public class StringServiceTest {
     @InjectMocks
     StringService stringService;
 
-    @BeforeMethod
+    @BeforeTest
     public void setup() {
 
         openMocks(this);
